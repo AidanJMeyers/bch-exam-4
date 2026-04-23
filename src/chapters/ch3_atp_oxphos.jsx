@@ -59,7 +59,7 @@ const chapter = {
       title: 'Complex I: NADH:Ubiquinone Oxidoreductase',
       subtitle: '~850 kDa, 45 subunits — pumps 4 H+ per NADH',
       images: [
-        { src: 'raw/etc_image2.jpeg', alt: 'Complex I NADH dehydrogenase', caption: 'Complex I: NADH → FMN → Fe-S clusters → ubiquinone; 4 H+ pumped.' }
+        { src: 'raw/etc_image10.jpeg', alt: 'Complex I NADH:ubiquinone oxidoreductase (Lehninger Fig. 19-9)', caption: 'Complex I: NADH delivers 2 e− to FMN; e− pass through a series of Fe-S centers (ending at N-2) out to ubiquinone (Q → QH₂). 4 H⁺ pumped per 2 e−.' }
       ],
       content: (
         <>
@@ -88,7 +88,7 @@ const chapter = {
       title: 'Complex II: Succinate Dehydrogenase — The CAC Bridge',
       subtitle: 'Pumps 0 H+; is BOTH a CAC enzyme AND an ETC complex',
       images: [
-        { src: 'raw/etc_image4.png', alt: 'Complex II succinate dehydrogenase', caption: 'Complex II: succinate → fumarate; FADH2 passes 2e- through Fe-S centers to Q. No H+ pumped.' }
+        { src: 'raw/etc_image15.jpeg', alt: 'Complex II / succinate dehydrogenase (Lehninger Fig. 19-10)', caption: 'Complex II: succinate → fumarate at the FAD site; 2 e− pass through three Fe-S centers (in subunit B) to ubiquinone. No H⁺ pumped — the only CAC enzyme embedded in the IMM.' }
       ],
       content: (
         <>
@@ -121,7 +121,7 @@ const chapter = {
       title: 'Mobile Carriers: Ubiquinone (Q) & Cytochrome c',
       subtitle: 'Two carriers that ferry e- BETWEEN complexes',
       images: [
-        { src: 'raw/etc_image8.jpeg', alt: 'Ubiquinone structure and reduction states', caption: 'Ubiquinone (Q) ↔ semiquinone (•QH) ↔ ubiquinol (QH2) — 1e- or 2e- transfers.' }
+        { src: 'raw/etc_image11.jpeg', alt: 'Ubiquinone ↔ semiquinone ↔ ubiquinol redox states (Lehninger Fig. 19-3)', caption: 'Ubiquinone (Q, fully oxidized) picks up 1 e⁻ + 1 H⁺ → semiquinone radical (•QH), then a second e⁻ + H⁺ → ubiquinol (QH₂, fully reduced). The long isoprenoid tail keeps it anchored in the lipid bilayer.' }
       ],
       content: (
         <>
@@ -156,7 +156,7 @@ const chapter = {
       title: 'Complex III: Cytochrome bc₁ & the Q Cycle',
       subtitle: 'Pumps 4 H+ per 2e- delivered (2 from QH2 + 2 from matrix)',
       images: [
-        { src: 'raw/etc_image10.jpeg', alt: 'Q cycle at Complex III', caption: 'Q cycle: bifurcated electron flow at the Qo site; Qi site regenerates QH2.' }
+        { src: 'raw/etc_image17.jpeg', alt: 'Complex III (cytochrome bc₁) with Rieske 2Fe-2S, heme b_L/b_H, cavern, and Q sites (Lehninger Fig. 19-11)', caption: 'Complex III: the Qo site binds QH₂ on the P side; one e⁻ goes to the Rieske [2Fe-2S] → cyt c₁ → cyt c (output). The other e⁻ goes through heme b_L → heme b_H → Q at the Qi site. Two QH₂ cycle to net: 2 e⁻ to cyt c + 4 H⁺ to IMS.' }
       ],
       content: (
         <>
@@ -190,7 +190,7 @@ const chapter = {
       title: 'Complex IV: Cytochrome Oxidase — O₂ → H₂O',
       subtitle: 'Pumps 2 H+ per pair; consumes 4 H+ from matrix to make H2O',
       images: [
-        { src: 'raw/etc_image11.jpeg', alt: 'Complex IV cytochrome oxidase', caption: 'Complex IV: cyt c → CuA → heme a → heme a3–CuB binuclear center → O2 → 2 H2O.' }
+        { src: 'raw/etc_image20.jpeg', alt: 'Electron flow through Complex IV — cyt c → CuA → heme a → Fe-Cu (heme a₃–CuB) → O₂ (Lehninger Fig. 19-13)', caption: 'Complex IV (cytochrome oxidase): 4 cyt c each deliver 1 e⁻ to the CuA binuclear center → heme a → heme a₃–CuB Fe-Cu center where O₂ is reduced to 2 H₂O (4 e⁻ + 4 "substrate" H⁺). 2 H⁺ are additionally pumped per 2 e⁻ (4 H⁺ per O₂).' }
       ],
       content: (
         <>
@@ -224,7 +224,7 @@ const chapter = {
       subtitle: '3 H+ per ATP synthesized (+ ~1 more for Pi / ATP transport)',
       images: [
         { src: 'raw/atp_image4.jpeg', alt: 'F0F1 ATP synthase architecture', caption: 'F0F1: membrane c-ring (F0) + α3β3γε head (F1); b2 stator holds the α3β3 fixed.' },
-        { src: 'raw/atp_image5.jpeg', alt: 'Binding-change model', caption: 'Boyer\'s binding-change model: β-empty, β-ADP (loose), β-ATP (tight) cycle as γ rotates.' }
+        { src: 'raw/atp_image8.jpeg', alt: 'Binding-change model — three β conformations cycle as γ rotates (Lehninger Fig. 19-26)', caption: 'Boyer\'s binding-change model: each β is in one of three conformations — β-empty (very-loose), β-ADP+Pi (loose), β-ATP (tight). Each 120° rotation of γ cycles each site to the next state; ATP is released at the β-empty transition. 3 H⁺ translocated per ATP synthesized.' }
       ],
       content: (
         <>
