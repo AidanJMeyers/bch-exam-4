@@ -1,9 +1,9 @@
 // src/data/exam.js
-// BCH 335 Exam IV — 50-question practice exam
+// Biochemistry Unit IV — 50-question practice exam
 // Distribution: 20 Lipids & Membranes, 20 PDH & CAC, 10 ATP & OxPhos
 
 export const examConfig = {
-  subject: 'BCH 335 Exam IV',
+  subject: 'Biochemistry Unit IV',
   totalQuestions: 50,
   passThreshold: 70,
   timed: false,
@@ -498,7 +498,7 @@ export const exam = [
       'Glucose — because ATP synthase drives glucose production'
     ],
     correct: 1,
-    explanation: 'Blocked ETC → NADH builds up → PDH and CAC dehydrogenases inhibited → pyruvate accumulates. Pyruvate is transaminated to alanine (elevated blood alanine) AND reduced to lactate by LDH (lactic acidosis). Classic exam signature of mitochondrial disease.',
+    explanation: 'Blocked ETC → NADH builds up → PDH and CAC dehydrogenases inhibited → pyruvate accumulates. Pyruvate is transaminated to alanine (elevated blood alanine) AND reduced to lactate by LDH (lactic acidosis). A signature finding in mitochondrial disease.',
     difficulty: 'H',
     chapter: 'ATP & OxPhos'
   },

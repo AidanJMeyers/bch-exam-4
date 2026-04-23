@@ -1,19 +1,28 @@
-# BCH 335 Exam IV — Interactive Study Dashboard
+# Biochemistry Unit IV — Interactive Study Dashboard
 
-Comprehensive interactive review dashboard for BCH 335 Unit IV (Lipids & Membranes, PDH/CAC/Regulation, ATP/OxPhos). Built with Vite + React + Tailwind. Deployed via GitHub Pages.
+An open, interactive study dashboard covering three core units of biochemistry: **lipids and membranes**, **the pyruvate dehydrogenase complex and citric acid cycle**, and **the electron transport chain and ATP synthesis**. Built with Vite + React + Tailwind. Deployed via GitHub Pages.
 
-## Content
+Live: https://aidanjmeyers.github.io/bch-exam-4/
 
-- **Chapter 1** — Lipids, Membranes, and FA Catabolism (13 blocks)
-- **Chapter 2** — PDH, Citric Acid Cycle, and Regulation (9 blocks)
-- **Chapter 3** — Electron Transport Chain & ATP Synthesis (9 blocks)
-- **Practice Exam** — 50 questions, mirroring past-exam style and difficulty
+## What's inside
 
-Each block features:
-- Anchor figures from original course materials
-- Step-by-step walkthrough of mechanisms and cycles
+- **Chapter 1 — Lipids, Membranes & FA Catabolism** (13 blocks)
+  Lipid classification, fatty acid structure and nomenclature, TAGs and waxes, glycerophospholipids, sphingolipids and blood groups, sterols, bilayer vs. micelle vs. vesicle, fluid mosaic asymmetry, membrane proteins and lipid dynamics, FA mobilization, activation and the carnitine shuttle, β-oxidation.
+- **Chapter 2 — PDH, CAC & Regulation** (9 blocks)
+  Pyruvate node, PDH architecture and mechanism, 8 CAC reactions, citrate synthase induced fit, the four redox steps, substrate-level phosphorylation, anaplerotic reactions and anabolic outputs, PDH/CAC regulation.
+- **Chapter 3 — Electron Transport & ATP Synthesis** (9 blocks)
+  Chemiosmotic theory, Complexes I–IV, ubiquinone and cytochrome c, the Q cycle, F₀F₁ architecture, the binding-change model, ATP yield, ROS defense, inhibitors and oxphos disease.
+- **Practice Exam** — 50 mixed-format questions (MCQ, short answer, T/F) spanning all three units.
+
+Each study block includes:
+
+- Anchor figures (classic Lehninger diagrams where relevant)
+- Step-by-step walkthroughs of mechanisms and cycles
 - Supplementary SVG study graphics
 - "Reviewed" checkbox, 1–5 confidence slider, persistent notes
+- A global **Review Later** tab that surfaces every saved note
+
+All progress (checkboxes, confidence, notes, practice answers) is persisted locally in the browser.
 
 ## Local development
 
@@ -23,6 +32,6 @@ npm run dev     # http://localhost:5173/bch-exam-4/
 npm run build
 ```
 
-## Live site
+## License
 
-https://aidanjmeyers.github.io/bch-exam-4/
+Content is free to use for educational purposes. Figures from Lehninger *Principles of Biochemistry* are used for educational reference and remain the copyright of their publishers.

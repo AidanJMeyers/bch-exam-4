@@ -14,7 +14,7 @@ const chapter = {
       content: (
         <>
           <p>
-            Lipids are a <strong>structurally and functionally diverse class of organic compounds</strong> united by one property: <em>poor solubility in water and high solubility in nonpolar organic solvents</em>. They are usually hydrocarbon-rich, can be amphipathic, and — critically — are <strong>not polymers</strong>. A past-exam trap: "which of the following do ALL lipids have in common?" — the answer is <strong>hydrophobicity</strong>, not a carboxylic acid, not a long hydrocarbon chain (steroids are rings!), not conjugated double bonds.
+            Lipids are a <strong>structurally and functionally diverse class of organic compounds</strong> united by one property: <em>poor solubility in water and high solubility in nonpolar organic solvents</em>. They are usually hydrocarbon-rich, can be amphipathic, and — critically — are <strong>not polymers</strong>. The one property all lipids share is <strong>hydrophobicity</strong> — not a carboxylic acid group (steroids have none), not a long hydrocarbon chain (steroid rings), not conjugated double bonds (carotenoids aside).
           </p>
           <p>Lipids fall into two broad buckets:</p>
           <ul>
@@ -64,7 +64,7 @@ const chapter = {
             <li><strong>Δ-notation</strong> counts from the carboxyl (C1): <code>18:1Δ<sup>9</sup></code> = double bond between C9 and C10 counting from the –COOH end.</li>
             <li><strong>ω-notation</strong> counts from the methyl end: ω-3 (ALA, EPA, DHA — essential, fish/flax), ω-6 (linoleic acid).</li>
           </ol>
-          <Callout kind="warn" title="Exam trap: valid vs invalid FA names">
+          <Callout kind="warn" title="Valid vs invalid FA names">
             Double-bond positions in Δ-notation must be <strong>consistent with real biochemistry</strong>. "20:5(Δ<sup>3,6,9,12,15</sup>)" is suspicious because natural PUFAs almost never have a Δ2 or Δ3 double bond in the α/β position (those are reserved for catabolism intermediates). "16:1Δ<sup>9</sup>" (palmitoleate) is a perfectly valid naturally occurring FA. Watch for first-double-bond positions ≤ 3 — usually a red flag.
           </Callout>
           <p>
@@ -94,7 +94,7 @@ const chapter = {
       content: (
         <>
           <p>
-            Fats dominate long-term storage for three reasons (a classic exam compare-contrast with glycogen/glucose):
+            Fats dominate long-term storage for three reasons (a core compare-contrast with glycogen/glucose):
           </p>
           <ol>
             <li><strong>Energy density:</strong> fatty acids are <em>more reduced</em> than carbohydrates, so oxidation yields more ATP per gram (~9 kcal/g vs ~4 kcal/g for carbs).</li>
@@ -237,7 +237,7 @@ const chapter = {
             Mammals get cholesterol from two sources: (1) <strong>dietary</strong> uptake and (2) <strong>de novo synthesis</strong> in the liver. <strong>Steroid hormones</strong> are oxidized sterol derivatives that lack the long alkyl side chain of cholesterol — they are more polar than cholesterol but still poorly water-soluble, so they travel bound to serum proteins.
           </p>
           <Callout kind="tip" title="Rigidity = the superpower">
-            Cholesterol's fused rings make it <em>rigid</em>. When it wedges between phospholipid tails, it prevents them from packing into a gel at cold temperatures AND prevents them from flopping too freely at warm temperatures. This "goldilocks" fluidity behavior is a classic exam short-answer target.
+            Cholesterol's fused rings make it <em>rigid</em>. When it wedges between phospholipid tails, it prevents them from packing into a gel at cold temperatures AND prevents them from flopping too freely at warm temperatures. This "goldilocks" fluidity behavior is a defining feature of cholesterol in animal membranes.
           </Callout>
         </>
       ),
@@ -370,7 +370,7 @@ const chapter = {
             ]}
           />
           <Callout kind="info" title="Exam angle on glucagon→HSL">
-            The signal cascade order — low glucose → glucagon → GPCR → adenylate cyclase → cAMP → PKA → HSL phosphorylation → TAG → FA + glycerol — is a favorite mechanism prompt.
+            The signal cascade order — low glucose → glucagon → GPCR → adenylate cyclase → cAMP → PKA → HSL phosphorylation → TAG → FA + glycerol — is worth tracing end-to-end.
           </Callout>
         </>
       ),
@@ -715,7 +715,7 @@ const chapter = {
       q: 'A cell is building fatty acids de novo. What molecular signal prevents these newly synthesized fatty acids from immediately entering β-oxidation, and where in the pathway does the regulation act?',
       type: 'short',
       correct: 'Malonyl-CoA, the committed intermediate of fatty acid synthesis, allosterically inhibits CPT-I (carnitine palmitoyltransferase I) on the outer mitochondrial membrane. This blocks the first step of the carnitine shuttle, preventing long-chain acyl-CoAs from entering the mitochondrial matrix where β-oxidation occurs. The result is reciprocal regulation: synthesis and breakdown do not run simultaneously.',
-      explanation: 'Malonyl-CoA → CPT-I inhibition → no carnitine shuttle → no β-oxidation. Classic reciprocal regulation example.',
+      explanation: 'Malonyl-CoA → CPT-I inhibition → no carnitine shuttle → no β-oxidation. Reciprocal regulation between anabolism and catabolism.',
       difficulty: 'H',
       chapter: 'Lipids & Membranes',
     },

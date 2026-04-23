@@ -1,9 +1,9 @@
 /**
  * Chapter 2 — PDH, Citric Acid Cycle & Regulation
- * BCH 335 Unit IV Exam
+ * Biochemistry — Unit IV
  * Sources:
  *   - CAC InClass (1).md  (primary)
- *   - KEY_BCH 335 CAC Quiz (2).md  (question style)
+ *   - CAC quiz (question style reference)
  *   - PDC CAC Lipids Membranes - Details - Kahoot!.md
  *   - CAC and ETC Classroom Discussion copy.md
  */
@@ -148,7 +148,7 @@ export default {
         {
           src: 'raw/cac_image7.jpeg',
           alt: 'Detailed reaction cycle of the PDH complex. E1 decarboxylates pyruvate with TPP to hydroxyethyl-TPP, which reductively acetylates lipoyllysine on E2. E2 transfers the acetyl group to CoA-SH. E3 re-oxidizes the dihydrolipoyl disulfide using FAD, and FADH2 is re-oxidized by NAD+ to regenerate FAD and NADH.',
-          caption: 'Lehninger Fig. 16-6 — PDH reaction cycle. Page will be provided on the exam.'
+          caption: 'Lehninger Fig. 16-6 — PDH reaction cycle.'
         }
       ],
       content: (
@@ -474,7 +474,7 @@ export default {
             <li>After fumarase and MDH, the OAA produced has, on average, 2 hot carbons + 2 cold carbons — that is, <b>half</b> of the original 4 hot carbons are retained.</li>
           </ol>
           <Callout kind="tip" title="Answer">
-            <b>1/2</b> of the original radioactivity is retained in OAA after one pass. Classic exam problem — know this.
+            <b>1/2</b> of the original radioactivity is retained in OAA after one pass. 
           </Callout>
 
           <Callout kind="warn" title="Why are the acetyl carbons NOT released as CO2 in the first turn?">
@@ -629,7 +629,7 @@ export default {
             <b> competitive inhibitor of succinate dehydrogenase</b>. When cells are treated with malonate,
             <b> succinate accumulates</b>.
           </p>
-          <Callout kind="warn" title="Exam trap">
+          <Callout kind="warn" title="Key distinction">
             Note: <b>malate</b> (the CAC intermediate) is NOT an inhibitor — do not confuse malate with malonate. The
             exam loves this look-alike. Similarly, &quot;tungstate is a competitive inhibitor of fumarase&quot; ⇒
             fumarate builds up (not water, not malate).
@@ -777,7 +777,7 @@ export default {
       ],
       correct: 3,
       difficulty: 'H',
-      explanation: 'Induced fit means the enzyme only becomes fully active when OAA binds first — so it is most active when OAA concentration is HIGH (enough to bind). The statement in choice 4 has the logic inverted. This is a classic exam trap.',
+      explanation: 'Induced fit means the enzyme only becomes fully active when OAA binds first — so it is most active when OAA concentration is HIGH (enough to bind). The statement in choice 4 has the logic inverted.',
       chapter: 'PDH & CAC'
     },
     {

@@ -319,7 +319,7 @@ const chapter = {
     {
       id: 'inhibitors',
       title: 'ETC Inhibitors & OxPhos Disease',
-      subtitle: 'Each inhibitor is a classic exam Q — AND explains a disease',
+      subtitle: 'Each inhibitor targets a distinct complex — and maps to a disease or toxin',
       images: [],
       content: (
         <>
