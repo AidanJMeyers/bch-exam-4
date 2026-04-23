@@ -162,7 +162,7 @@ const chapter = {
         <>
           <p className="mb-3">
             Complex III (cytochrome bc<sub>1</sub>) takes electrons from lipid-soluble QH<sub>2</sub>
-            and passes them to water-soluble cyt <em>c</em>. The elegant trick — the
+            and passes them to water-soluble cyt <em>c</em>. The elegant mechanism — the
             <strong> Q cycle</strong> — splits each QH<sub>2</sub>&apos;s two electrons onto
             different paths so that more protons can be translocated.
           </p>
@@ -351,7 +351,7 @@ const chapter = {
             <li>Accumulated pyruvate is also transaminated: pyruvate + Glu → <strong>alanine</strong> + αKG → <strong>elevated blood alanine</strong>.</li>
             <li>Tissues most affected: high-energy, high-OxPhos ones — <strong>CNS, heart, skeletal muscle</strong>.</li>
           </ol>
-          <Callout kind="danger" title="Exam trigger">
+          <Callout kind="danger" title="Key clinical/toxicology link">
             High blood lactate + high blood alanine + normal liver = think mitochondrial / OxPhos disease. Mechanism: NADH back-up → pyruvate back-up → alanine &amp; lactate spillover.
           </Callout>
         </>
@@ -458,7 +458,7 @@ const chapter = {
         'Alanine is a competitive inhibitor of cytochrome c'
       ],
       correct: 1,
-      explanation: 'When the ETC is broken, NADH/NAD+ rises in the matrix. High NADH inhibits PDH and CAC dehydrogenases, so pyruvate accumulates. Excess pyruvate is transaminated (pyruvate + glutamate → alanine + α-KG) AND reduced to lactate, giving the classic high-alanine + high-lactate OxPhos-disease picture.',
+      explanation: 'When the ETC is broken, NADH/NAD+ rises in the matrix. High NADH inhibits PDH and CAC dehydrogenases, so pyruvate accumulates. Excess pyruvate is transaminated (pyruvate + glutamate → alanine + α-KG) AND reduced to lactate, giving the textbook clinical picture of mitochondrial disease: elevated alanine and lactate.',
       difficulty: 'H',
       chapter: 'ATP & OxPhos'
     },

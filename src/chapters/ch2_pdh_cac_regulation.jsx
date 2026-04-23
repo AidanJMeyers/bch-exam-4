@@ -60,7 +60,7 @@ export default {
               ['ETC + OxPhos', 'Inner mito. mem.', 'NADH, FADH2, O2', 'H2O, ~26 ATP']
             ]}
           />
-          <Callout kind="warn" title="Exam cue — location">
+          <Callout kind="warn" title="Location matters">
             The PDH complex is located in the mitochondrial <b>matrix</b> (soluble), NOT embedded in the inner
             mitochondrial membrane. The one CAC enzyme that IS membrane-embedded is succinate dehydrogenase (Complex II).
           </Callout>
@@ -116,7 +116,7 @@ export default {
           </Callout>
           <Callout kind="warn" title="What PDH does NOT illustrate">
             PDH does NOT hydrolyze ATP — the acetyl thioester is driven by the oxidative decarboxylation, not by ATP
-            cleavage. A common exam distractor says &quot;ATP hydrolysis drives thioester formation&quot; — this is FALSE.
+            cleavage. A common misconception is that ATP hydrolysis drives thioester formation. This is false.
           </Callout>
           <Table
             headers={['Cofactor', 'Vitamin source', 'Bound to', 'Role']}
@@ -212,7 +212,7 @@ export default {
             huge.
           </Callout>
 
-          <Card title="Net reaction (memorize this)">
+          <Card title="Net reaction">
             <p className="font-mono text-sm">
               Pyruvate + CoA-SH + NAD+ → Acetyl-CoA + CO<sub>2</sub> + NADH
             </p>
@@ -221,7 +221,7 @@ export default {
             </p>
           </Card>
 
-          <Callout kind="warn" title="Exam triggers">
+          <Callout kind="warn" title="Common distractors">
             <ul className="list-disc ml-5 space-y-1">
               <li>&quot;Functional group that captures the acetyl group?&quot; → the <b>thiol</b> (–SH) of CoA.</li>
               <li>&quot;Which carbon of pyruvate becomes CO<sub>2</sub>?&quot; → C1 (the carboxylate).</li>
@@ -281,7 +281,7 @@ export default {
             Two CO<sub>2</sub> are released per turn — but they are <b>NOT</b> the two carbons that just entered as
             acetyl. The entering acetyl carbons are retained in oxaloacetate at the end of the cycle; the CO<sub>2</sub>
             released comes from carbons that were already in the cycle (from the OAA of the previous turn). This is the
-            logic behind the classic &quot;1/2 labeled OAA&quot; isotope question (see block 7).
+            logic behind the ¹⁴C-OAA isotope-tracing analysis (see block 7).
           </Callout>
 
           <Callout kind="warn" title="Will GTP inhibit the CAC?">
@@ -323,9 +323,9 @@ export default {
             means the enzyme is active only when OAA is present — it ensures that acetyl-CoA is not wasted on
             unproductive hydrolysis.
           </p>
-          <Callout kind="warn" title="Tricky exam statement">
+          <Callout kind="warn" title="A common misreading">
             &quot;Induced fit ensures citrate synthase is most active when OAA is LOW.&quot; <b>FALSE.</b> Induced fit
-            ensures the enzyme is active when OAA is <b>HIGH</b> enough to bind first. The exam loves to flip this.
+            ensures the enzyme is active when OAA is <b>HIGH</b> enough to bind first. This statement gets reversed often.
           </Callout>
 
           <h4 className="font-semibold mt-3">Catalysis — acid-base + covalent + proximity</h4>
@@ -418,10 +418,10 @@ export default {
           <p>
             Malate → OAA has a very positive standard ΔG&apos;° (~+29 kJ/mol) — intrinsically unfavorable. It runs
             forward in vivo because oxaloacetate is kept at very low concentration: citrate synthase consumes OAA as
-            fast as it is made. Le Chatelier&apos;s principle pulls MDH to the right. This is the classic example of
+            fast as it is made. Le Chatelier&apos;s principle pulls MDH to the right. This is a well-known example of
             thermodynamic coupling via product removal.
           </p>
-          <Callout kind="warn" title="Exam cue">
+          <Callout kind="warn" title="Key point">
             If asked &quot;how does the malate dehydrogenase step proceed forward despite being thermodynamically
             unfavorable?&quot; — the answer is <b>low [OAA] driven by citrate synthase consumption</b>.
           </Callout>
@@ -460,7 +460,7 @@ export default {
             and half&quot;) between the two ends of the product.
           </p>
 
-          <h4 className="font-semibold mt-3">Classic isotope problem (memorize the logic)</h4>
+          <h4 className="font-semibold mt-3">¹⁴C isotope tracing — the logic</h4>
           <p className="text-sm">
             <b>Setup:</b> Start with oxaloacetate uniformly labeled with <sup>14</sup>C (all 4 carbons hot). Condense
             with <b>unlabeled</b> acetyl-CoA. Run one turn of the CAC. What fraction of the original radioactivity is
@@ -611,7 +611,7 @@ export default {
           </Callout>
           <Callout kind="tip" title="Succinyl-CoA blocks TWO early steps">
             Succinyl-CoA, a CAC intermediate itself, feeds back on <b>citrate synthase</b> and <b>α-KG DH</b> —
-            classic end-product-like inhibition that prevents runaway accumulation.
+            canonical end-product-like inhibition that prevents runaway accumulation.
           </Callout>
 
           <h4 className="font-semibold mt-4">(d) Calcium activation in working muscle</h4>
@@ -622,7 +622,7 @@ export default {
             ATP being consumed. No separate signaling cascade is required.
           </p>
 
-          <h4 className="font-semibold mt-4">Malonate — a classic competitive inhibitor</h4>
+          <h4 className="font-semibold mt-4">Malonate — a competitive inhibitor</h4>
           <p>
             Malonate (<sup>−</sup>OOC–CH<sub>2</sub>–COO<sup>−</sup>) is a 3-carbon dicarboxylate that resembles
             succinate (<sup>−</sup>OOC–CH<sub>2</sub>–CH<sub>2</sub>–COO<sup>−</sup>) but cannot be oxidized. It is a
@@ -631,7 +631,7 @@ export default {
           </p>
           <Callout kind="warn" title="Key distinction">
             Note: <b>malate</b> (the CAC intermediate) is NOT an inhibitor — do not confuse malate with malonate. The
-            exam loves this look-alike. Similarly, &quot;tungstate is a competitive inhibitor of fumarase&quot; ⇒
+            this is a commonly confused pair in metabolism. Similarly, &quot;tungstate is a competitive inhibitor of fumarase&quot; ⇒
             fumarate builds up (not water, not malate).
           </Callout>
 
@@ -695,7 +695,7 @@ export default {
     methods: [
       { name: 'Trace the PDH cofactor cycle', expand: 'T→L→C→F→N', desc: 'TPP (decarboxylation) → Lipoyllysine (swinging arm) → CoA-SH (acetyl pickup) → FAD (re-oxidize lipoyl) → NAD+ (final electron sink).' },
       { name: 'Identify redox steps in CAC', expand: '3-4-6-8', desc: 'Steps 3, 4, 6, 8 are the four redox reactions. Steps 3, 4, 8 use NAD+; step 6 uses FAD.' },
-      { name: '14C labeling in CAC', expand: 'Symmetry scramble', desc: 'When tracing 14C, remember that at succinate/fumarate the label is scrambled between the two ends because the molecule is symmetric. Answer &quot;1/2 retained in OAA after one turn&quot; for the classic problem.' },
+      { name: '14C labeling in CAC', expand: 'Symmetry scramble', desc: 'When tracing 14C, remember that at succinate/fumarate the label is scrambled between the two ends because the molecule is symmetric. Answer &quot;1/2 retained in OAA after one turn&quot; for this analysis.' },
       { name: 'Spot the regulated step', expand: 'ΔG′° ≈ 0 check', desc: 'Regulated/irreversible steps have large negative in vivo ΔG. In the CAC: citrate synthase (1), IDH (3), α-KG DH (4). Reversible steps near equilibrium are NOT major control points.' },
       { name: 'Tell prosthetic from substrate', expand: 'Stays vs. leaves', desc: 'If it stays bound after catalysis → prosthetic group (TPP, lipoyllysine, FAD). If it diffuses away → co-substrate (NAD+, CoA-SH). If it is chemically transformed to a product → substrate (pyruvate, acetyl-CoA).' }
     ],

@@ -33,7 +33,7 @@ const chapter = {
               ["Insulation / waterproofing", "Waxes, TAG depots", "Thermal + barrier function"],
             ]}
           />
-          <Callout kind="tip" title="Exam anchor: what lipids share">
+          <Callout kind="tip" title="What all lipids share">
             ALL lipids share hydrophobicity (low water solubility). They do NOT all share: fatty acid chains (cholesterol lacks one), carboxylic acid groups (TAGs esterify them away), or polymeric structure (lipids are never true polymers).
           </Callout>
         </>
@@ -65,7 +65,7 @@ const chapter = {
             <li><strong>ω-notation</strong> counts from the methyl end: ω-3 (ALA, EPA, DHA — essential, fish/flax), ω-6 (linoleic acid).</li>
           </ol>
           <Callout kind="warn" title="Valid vs invalid FA names">
-            Double-bond positions in Δ-notation must be <strong>consistent with real biochemistry</strong>. "20:5(Δ<sup>3,6,9,12,15</sup>)" is suspicious because natural PUFAs almost never have a Δ2 or Δ3 double bond in the α/β position (those are reserved for catabolism intermediates). "16:1Δ<sup>9</sup>" (palmitoleate) is a perfectly valid naturally occurring FA. Watch for first-double-bond positions ≤ 3 — usually a red flag.
+            Double-bond positions in Δ-notation must be <strong>consistent with real biochemistry</strong>. "20:5(Δ<sup>3,6,9,12,15</sup>)" is suspicious because natural PUFAs almost never have a Δ2 or Δ3 double bond in the α/β position (those are reserved for catabolism intermediates). "16:1Δ<sup>9</sup>" (palmitoleate) is a perfectly valid naturally occurring FA. First-double-bond positions ≤ 3 are unusual in natural PUFAs.
           </Callout>
           <p>
             <strong>Essential fatty acids</strong> (ALA — α-linolenic, ω-3; linoleic, ω-6) cannot be synthesized by humans. Humans can convert ALA → EPA → DHA inefficiently, so dietary fatty fish / flax / walnuts matter for brain membranes and blood clotting regulation.
@@ -297,7 +297,7 @@ const chapter = {
             <li><strong>Composition varies by organelle:</strong> PM is cholesterol-rich; inner mito membrane is cardiolipin-rich; chloroplasts are galactolipid-rich.</li>
           </ol>
           <Callout kind="tip" title="Lipid raft signature">
-            Rafts are high in cholesterol + sphingolipids + saturated-tail lipids + GPI anchors. They are more ordered (thicker) and concentrate many signaling receptors. Detergent resistance is their classic biochemical signature.
+            Rafts are high in cholesterol + sphingolipids + saturated-tail lipids + GPI anchors. They are more ordered (thicker) and concentrate many signaling receptors. Detergent resistance is their biochemical signature.
           </Callout>
         </>
       ),
@@ -369,7 +369,7 @@ const chapter = {
               ["Serum albumin", "Free fatty acids (from HSL)", "Adipose → liver / muscle"],
             ]}
           />
-          <Callout kind="info" title="Exam angle on glucagon→HSL">
+          <Callout kind="info" title="The glucagon → HSL cascade">
             The signal cascade order — low glucose → glucagon → GPCR → adenylate cyclase → cAMP → PKA → HSL phosphorylation → TAG → FA + glycerol — is worth tracing end-to-end.
           </Callout>
         </>
@@ -398,7 +398,7 @@ const chapter = {
             </li>
           </ol>
           <Callout kind="warn" title="CPT-I is the gatekeeper">
-            CPT-I is inhibited by <strong>malonyl-CoA</strong> (the committed intermediate of FA synthesis). This reciprocal regulation prevents simultaneous synthesis and breakdown: if cells are building FAs, they are NOT burning them. Defects in CPT or the carnitine transporter produce classic FA oxidation disorders screened in newborns.
+            CPT-I is inhibited by <strong>malonyl-CoA</strong> (the committed intermediate of FA synthesis). This reciprocal regulation prevents simultaneous synthesis and breakdown: if cells are building FAs, they are NOT burning them. Defects in CPT or the carnitine transporter produce inherited FA oxidation disorders screened in newborns.
           </Callout>
           <svg viewBox="0 0 460 140" width="100%" style={{ maxWidth: 540, border: '1px solid #334155', borderRadius: 6, background: '#0b1220' }}>
             <text x="10" y="20" fill="#e2e8f0" fontSize="12">Cytosol</text>
@@ -526,7 +526,7 @@ const chapter = {
     methods: [
       { name: 'FA Δ-notation decoder', expand: 'Carbons:DoubleBonds(Δpositions)', desc: 'e.g., 18:2Δ⁹,¹² = 18 C, 2 double bonds between C9–C10 and C12–C13, both counted from the COOH.' },
       { name: 'ω-naming quick map', expand: 'Count from the methyl end', desc: 'ω-3 = first C=C is 3 C from CH₃ end. Common ω-3: ALA, EPA, DHA. Essential dietary FAs.' },
-      { name: 'Why-fat-wins triad', expand: 'Energy, Dehydration, Packing', desc: 'Memorize these three words to answer any "why are fats better than carbs?" short answer.' },
+      { name: 'Why-fat-wins triad', expand: 'Energy, Dehydration, Packing', desc: 'Use these three words to explain why fats beat carbs for long-term storage.' },
       { name: 'Membrane protein 3-class test', expand: 'Detergent? pH? Lipase?', desc: 'Integral needs detergent. Peripheral releases with pH/ionic strength. GPI-anchored releases with PLC.' },
       { name: 'Flippase/floppase/scramblase', expand: 'In / Out / Both', desc: 'Flippase → IN (ATP). Floppase → OUT (ATP). Scramblase → BOTH (no ATP, Ca²⁺-triggered).' },
       { name: 'β-oxidation 4-step mnemonic', expand: 'Oxidize — Hydrate — Oxidize — Cleave', desc: 'AD (FADH₂) → ECH (add H₂O) → HAD (NADH) → KT (thiolysis with CoA → acetyl-CoA + shorter acyl-CoA).' },
@@ -573,7 +573,7 @@ const chapter = {
         '12:4Δ¹,³,⁵,⁷',
       ],
       correct: 1,
-      explanation: 'Palmitoleate (16:1Δ9) is a classic naturally occurring monounsaturated FA. Odd-C FAs are rare, and Δ positions starting at Δ1 or Δ2 in PUFAs are not typical natural configurations.',
+      explanation: 'Palmitoleate (16:1Δ9) is a well-known naturally occurring monounsaturated FA. Odd-C FAs are rare, and Δ positions starting at Δ1 or Δ2 in PUFAs are not typical natural configurations.',
       difficulty: 'M',
       chapter: 'Lipids & Membranes',
     },

@@ -235,7 +235,7 @@ export const exam = [
       'A sphingosine backbone'
     ],
     correct: 1,
-    explanation: 'Cholesterol has the classic steroid nucleus (three six-membered rings + one five-membered) with a 3β-hydroxyl group and an 8-carbon aliphatic tail. The OH orients toward the aqueous phase while the rings + tail sit among the acyl chains of the bilayer.',
+    explanation: 'Cholesterol has the canonical steroid nucleus (three six-membered rings + one five-membered) with a 3β-hydroxyl group and an 8-carbon aliphatic tail. The OH orients toward the aqueous phase while the rings + tail sit among the acyl chains of the bilayer.',
     difficulty: 'M',
     chapter: 'Lipids & Membranes'
   },
@@ -302,7 +302,7 @@ export const exam = [
     chapter: 'PDH & CAC'
   },
   {
-    q: 'The citrate synthase reaction is classically described as an example of which mechanism?',
+    q: 'The citrate synthase reaction is described as an example of which mechanism?',
     type: 'mcq',
     choices: [
       'Random-order binding',
@@ -311,7 +311,7 @@ export const exam = [
       'Metal-ion catalysis with Zn2+'
     ],
     correct: 1,
-    explanation: 'Citrate synthase exhibits classic induced fit. Oxaloacetate binds first and drives a closing motion that creates the acetyl-CoA binding site and occludes water (which would otherwise hydrolyze the thioester). This makes the reaction essentially irreversible and is a major regulatory node.',
+    explanation: 'Citrate synthase exhibits textbook induced fit. Oxaloacetate binds first and drives a closing motion that creates the acetyl-CoA binding site and occludes water (which would otherwise hydrolyze the thioester). This makes the reaction essentially irreversible and is a major regulatory node.',
     difficulty: 'M',
     chapter: 'PDH & CAC'
   },
@@ -366,7 +366,7 @@ export const exam = [
     type: 'tf',
     choices: ['True', 'False'],
     correct: 1,
-    explanation: 'False. Most regulated enzymes integrate BOTH positive and negative allosteric signals at distinct sites. Classic example: PFK-1 is activated by AMP and fructose-2,6-BP while being inhibited by ATP and citrate.',
+    explanation: 'False. Most regulated enzymes integrate BOTH positive and negative allosteric signals at distinct sites. For example: PFK-1 is activated by AMP and fructose-2,6-BP while being inhibited by ATP and citrate.',
     difficulty: 'M',
     chapter: 'PDH & CAC'
   },
@@ -489,7 +489,7 @@ export const exam = [
     chapter: 'ATP & OxPhos'
   },
   {
-    q: 'In oxidative phosphorylation disease (genetic ETC defect), which molecule is classically ELEVATED in blood and WHY?',
+    q: 'In oxidative phosphorylation disease (genetic ETC defect), which molecule is characteristically ELEVATED in blood and WHY?',
     type: 'mcq',
     choices: [
       'Ketone bodies — because fats are not being oxidized',
