@@ -64,9 +64,6 @@ const chapter = {
             <li><strong>Δ-notation</strong> counts from the carboxyl (C1): <code>18:1Δ<sup>9</sup></code> = double bond between C9 and C10 counting from the –COOH end.</li>
             <li><strong>ω-notation</strong> counts from the methyl end: ω-3 (ALA, EPA, DHA — essential, fish/flax), ω-6 (linoleic acid).</li>
           </ol>
-          <Callout kind="warn" title="Valid vs invalid FA names">
-            Double-bond positions in Δ-notation must be <strong>consistent with real biochemistry</strong>. "20:5(Δ<sup>3,6,9,12,15</sup>)" is suspicious because natural PUFAs almost never have a Δ2 or Δ3 double bond in the α/β position (those are reserved for catabolism intermediates). "16:1Δ<sup>9</sup>" (palmitoleate) is a perfectly valid naturally occurring FA. First-double-bond positions ≤ 3 are unusual in natural PUFAs.
-          </Callout>
           <p>
             <strong>Essential fatty acids</strong> (ALA — α-linolenic, ω-3; linoleic, ω-6) cannot be synthesized by humans. Humans can convert ALA → EPA → DHA inefficiently, so dietary fatty fish / flax / walnuts matter for brain membranes and blood clotting regulation.
           </p>
@@ -547,34 +544,6 @@ const chapter = {
       correct: 3,
       explanation: 'Lipids are defined by poor water solubility alone. Steroids have no long chain, TAGs esterify away the COOH, and most lipids lack conjugated bonds. Only hydrophobicity is universal.',
       difficulty: 'E',
-      chapter: 'Lipids & Membranes',
-    },
-    {
-      q: 'A student names a fatty acid "20:5(Δ³,⁶,⁹,¹²,¹⁵)". What is the MOST problematic feature of this name?',
-      type: 'mcq',
-      choices: [
-        'The total number of carbons (20) is odd and therefore impossible',
-        'A Δ3 double bond is extremely unusual in natural FAs — positions near the carboxyl are reserved for catabolic intermediates',
-        'A 5-double-bond PUFA cannot biologically exist',
-        'The Δ-notation is always written from the methyl end',
-      ],
-      correct: 1,
-      explanation: 'Natural PUFAs almost never place a double bond at Δ2 or Δ3 (those appear only transiently as β-oxidation intermediates). 20 is even (not odd), 20:5 PUFAs exist (EPA is 20:5Δ5,8,11,14,17), and Δ counts from the carboxyl.',
-      difficulty: 'H',
-      chapter: 'Lipids & Membranes',
-    },
-    {
-      q: 'Which fatty acid is a legitimate naturally occurring molecule?',
-      type: 'mcq',
-      choices: [
-        '17:1Δ⁹ (odd-C)',
-        '16:1Δ⁹ (palmitoleate)',
-        '18:3Δ²,⁵,⁸',
-        '12:4Δ¹,³,⁵,⁷',
-      ],
-      correct: 1,
-      explanation: 'Palmitoleate (16:1Δ9) is a well-known naturally occurring monounsaturated FA. Odd-C FAs are rare, and Δ positions starting at Δ1 or Δ2 in PUFAs are not typical natural configurations.',
-      difficulty: 'M',
       chapter: 'Lipids & Membranes',
     },
     {

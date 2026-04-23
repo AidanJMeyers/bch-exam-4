@@ -279,29 +279,6 @@ export const exam = [
     chapter: 'PDH & CAC'
   },
   {
-    q: 'After one complete turn of the citric acid cycle starting from acetyl-CoA labeled with C-14 at its carbonyl carbon, what fraction of the C-14 ends up in the oxaloacetate at the end of the turn?',
-    type: 'mcq',
-    choices: ['0', '1/2', '1 (all of it)', 'None — both labeled carbons are released as CO2'],
-    correct: 1,
-    explanation: 'The two carbons released as CO2 in the first turn (at IDH and αKGDH) come from OXALOACETATE, not from the acetyl-CoA. Both of the original acetyl-CoA carbons remain — but succinate is SYMMETRIC, so they scramble equally between the two ends. The labeled carbons end up split 50/50 across positions in oxaloacetate → 1/2 the label in any given position.',
-    difficulty: 'H',
-    chapter: 'PDH & CAC'
-  },
-  {
-    q: 'Malonate is a competitive inhibitor of which CAC enzyme, and which intermediate therefore accumulates when malonate is added?',
-    type: 'mcq',
-    choices: [
-      'Citrate synthase; citrate accumulates',
-      'Succinate dehydrogenase; succinate accumulates',
-      'Fumarase; fumarate accumulates',
-      'Malate dehydrogenase; malate accumulates'
-    ],
-    correct: 1,
-    explanation: 'Malonate is a close structural analog of succinate — 3 carbons with two carboxylates — and it competitively blocks succinate dehydrogenase. Historically this is how Krebs showed SDH was a distinct CAC enzyme. Succinate accumulates upstream of the block.',
-    difficulty: 'M',
-    chapter: 'PDH & CAC'
-  },
-  {
     q: 'The citrate synthase reaction is described as an example of which mechanism?',
     type: 'mcq',
     choices: [
@@ -416,14 +393,6 @@ export const exam = [
     chapter: 'PDH & CAC'
   },
   {
-    q: 'Short answer: Why does arsenite inhibit the PDH complex, and what cofactor does it target?',
-    type: 'short',
-    correct: 'Arsenite binds the two thiol groups of the REDUCED lipoamide cofactor (the -SH groups of dihydrolipoyl-lysine), forming a stable ring. This locks lipoamide in the reduced form; E3 cannot reoxidize it and the whole complex stalls.',
-    explanation: 'Arsenite complexes vicinal dithiols, especially the two —SH of reduced lipoamide. The sulfurs cannot cycle back to the disulfide form, so E3 has nothing to reduce and the complex stalls after one turnover.',
-    difficulty: 'H',
-    chapter: 'PDH & CAC'
-  },
-  {
     q: 'Short answer: Name the three irreversible regulated steps of the CAC.',
     type: 'short',
     correct: 'Citrate synthase, isocitrate dehydrogenase, and α-ketoglutarate dehydrogenase',
@@ -443,20 +412,6 @@ export const exam = [
     correct: 0,
     explanation: 'PDH: pyruvate + CoA-SH + NAD+ → acetyl-CoA + CO2 + NADH + H+. It is an oxidative decarboxylation that commits pyruvate to oxidative metabolism rather than gluconeogenesis or fermentation.',
     difficulty: 'E',
-    chapter: 'PDH & CAC'
-  },
-  {
-    q: 'Why does fluoroacetate (the active metabolite of "1080" rat poison) kill via the CAC?',
-    type: 'mcq',
-    choices: [
-      'It directly inhibits cytochrome c oxidase',
-      'It is metabolized to fluorocitrate, which inhibits aconitase — citrate accumulates and the cycle stops',
-      'It destroys ATP synthase',
-      'It uncouples the ETC'
-    ],
-    correct: 1,
-    explanation: 'Fluoroacetate is activated by cellular enzymes to fluoroacetyl-CoA, which citrate synthase uses to produce FLUOROCITRATE. Fluorocitrate is a potent inhibitor of aconitase — citrate accumulates, the cycle halts, energy production collapses.',
-    difficulty: 'H',
     chapter: 'PDH & CAC'
   },
   {

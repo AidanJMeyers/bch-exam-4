@@ -128,11 +128,6 @@ export default {
               ['NAD+', 'B3 (niacin)', 'Co-substrate', 'Final e- acceptor → NADH']
             ]}
           />
-          <Callout kind="info" title="White-rice / alcoholism connection">
-            Polished white rice is low in thiamine (B1). Chronic deficiency (beriberi; Wernicke–Korsakoff in alcoholics,
-            who absorb thiamine poorly) cripples TPP-dependent enzymes — PDH, α-KG DH, and transketolase — producing
-            lactic acidosis and neurological symptoms because pyruvate piles up and is shunted to lactate.
-          </Callout>
         </>
       )
     },
@@ -278,10 +273,9 @@ export default {
           </Card>
 
           <Callout kind="info" title="How many CO2 per turn, and which carbons?">
-            Two CO<sub>2</sub> are released per turn — but they are <b>NOT</b> the two carbons that just entered as
-            acetyl. The entering acetyl carbons are retained in oxaloacetate at the end of the cycle; the CO<sub>2</sub>
-            released comes from carbons that were already in the cycle (from the OAA of the previous turn). This is the
-            logic behind the ¹⁴C-OAA isotope-tracing analysis (see block 7).
+            Two CO<sub>2</sub> are released per turn. Note that because succinate and fumarate are symmetric molecules,
+            their "top" and "bottom" ends become chemically indistinguishable, so once carbons pass that point in the
+            cycle they cannot be specifically traced to their original position.
           </Callout>
 
           <Callout kind="warn" title="Will GTP inhibit the CAC?">
@@ -303,7 +297,7 @@ export default {
         {
           src: 'raw/cac_image14.jpeg',
           alt: 'Citrate synthase active-site mechanism. Asp375 acts as a base to deprotonate the methyl of acetyl-CoA, generating an enolate/carbanion that attacks the carbonyl carbon of oxaloacetate. A histidine protonates the oxaloacetate oxygen.',
-          caption: 'Citrate synthase mechanism — Asp375 acts as the general base (analogous to Asp102 in chymotrypsin\'s catalytic triad).'
+          caption: 'Citrate synthase mechanism — an aspartate residue acts as the general base; a histidine protonates the oxaloacetate oxygen.'
         }
       ],
       content: (
@@ -323,18 +317,13 @@ export default {
             means the enzyme is active only when OAA is present — it ensures that acetyl-CoA is not wasted on
             unproductive hydrolysis.
           </p>
-          <Callout kind="warn" title="A common misreading">
-            &quot;Induced fit ensures citrate synthase is most active when OAA is LOW.&quot; <b>FALSE.</b> Induced fit
-            ensures the enzyme is active when OAA is <b>HIGH</b> enough to bind first. This statement gets reversed often.
-          </Callout>
 
           <h4 className="font-semibold mt-3">Catalysis — acid-base + covalent + proximity</h4>
           <p className="text-sm">
-            <b>Asp375</b> acts as a general base, abstracting a proton from the methyl of acetyl-CoA to generate the
-            nucleophilic enolate/carbanion — analogous to the catalytic Asp of chymotrypsin (though CS is not a serine
-            protease). A <b>His</b> residue donates a proton to the oxaloacetate carbonyl oxygen. The enolate attacks
-            the OAA carbonyl carbon, forming citryl-CoA. Water then hydrolyzes the thioester to release CoA-SH and
-            citrate.
+            An <b>Asp</b> residue acts as a general base, abstracting a proton from the methyl of acetyl-CoA to generate
+            the nucleophilic enolate/carbanion. A <b>His</b> residue donates a proton to the oxaloacetate carbonyl oxygen.
+            The enolate attacks the OAA carbonyl carbon, forming citryl-CoA. Water then hydrolyzes the thioester to
+            release CoA-SH and citrate.
           </p>
 
           <h4 className="font-semibold mt-3">Aconitase — dehydration / rehydration</h4>
@@ -435,7 +424,7 @@ export default {
     {
       id: 'slp-cac',
       title: 'Substrate-Level Phosphorylation & Symmetric Intermediates',
-      subtitle: 'Succinyl-CoA → GTP, and why ¹⁴C gets scrambled at succinate',
+      subtitle: 'Succinyl-CoA → GTP; succinate and fumarate are symmetric',
       images: [],
       content: (
         <>
@@ -455,33 +444,10 @@ export default {
           <h4 className="font-semibold mt-4">Symmetric intermediates: succinate &amp; fumarate</h4>
           <p>
             Succinate and fumarate are <b>symmetric</b> molecules — their &quot;top&quot; and &quot;bottom&quot; ends
-            are chemically indistinguishable. This means that if you label one end with <sup>14</sup>C, the enzymes
-            that follow (fumarase, MDH) treat both ends equivalently, so the label is randomly distributed (&quot;half
-            and half&quot;) between the two ends of the product.
+            are chemically indistinguishable. Because of this symmetry, once the 2-carbon group derived from acetate
+            passes into succinate (and fumarate) it can no longer be specifically assigned to one end of the molecule
+            (Lehninger notes this on Fig. 16-7). This is a key conceptual point about the structure of the cycle.
           </p>
-
-          <h4 className="font-semibold mt-3">¹⁴C isotope tracing — the logic</h4>
-          <p className="text-sm">
-            <b>Setup:</b> Start with oxaloacetate uniformly labeled with <sup>14</sup>C (all 4 carbons hot). Condense
-            with <b>unlabeled</b> acetyl-CoA. Run one turn of the CAC. What fraction of the original radioactivity is
-            found in the OAA at the end?
-          </p>
-          <ol className="list-decimal ml-6 text-sm space-y-1">
-            <li>Citrate synthase joins hot OAA (4 hot C&apos;s) + cold acetyl (2 cold C&apos;s) → citrate (4 hot, 2 cold).</li>
-            <li>Isocitrate DH releases CO<sub>2</sub> from a carbon that came from the <b>original OAA</b> (a hot carbon).</li>
-            <li>α-KG DH releases another CO<sub>2</sub>, again from a carbon originally from OAA (another hot carbon).</li>
-            <li>Now succinate has 2 hot (from OAA) + 2 cold (from acetyl) carbons. BUT succinate is symmetric, so the label is scrambled.</li>
-            <li>After fumarase and MDH, the OAA produced has, on average, 2 hot carbons + 2 cold carbons — that is, <b>half</b> of the original 4 hot carbons are retained.</li>
-          </ol>
-          <Callout kind="tip" title="Answer">
-            <b>1/2</b> of the original radioactivity is retained in OAA after one pass. 
-          </Callout>
-
-          <Callout kind="warn" title="Why are the acetyl carbons NOT released as CO2 in the first turn?">
-            Because of symmetry-driven scrambling at succinate, the two carbons that just entered (as acetyl) survive
-            the first turn. They are released as CO<sub>2</sub> only in subsequent turns. This is why Lehninger
-            Fig. 16-7 shades the acetyl carbons in pink — they don&apos;t leave right away.
-          </Callout>
         </>
       )
     },
@@ -602,7 +568,7 @@ export default {
               ['Citrate synthase (step 1)', 'NADH, succinyl-CoA, citrate, ATP', '(substrate availability: OAA, acetyl-CoA)'],
               ['Isocitrate DH (step 3)', 'NADH, ATP', 'ADP, Ca2+'],
               ['α-KG DH complex (step 4)', 'NADH, succinyl-CoA, ATP', 'Ca2+'],
-              ['Succinate DH (step 6)', 'Oxaloacetate, malonate (competitive)', 'succinate, ubiquinone']
+              ['Succinate DH (step 6)', 'Oxaloacetate', 'succinate, ubiquinone']
             ]}
           />
           <Callout kind="tip" title="NADH blocks THREE steps">
@@ -621,19 +587,6 @@ export default {
             production. This elegant coupling means that contraction itself accelerates ATP synthesis to replace the
             ATP being consumed. No separate signaling cascade is required.
           </p>
-
-          <h4 className="font-semibold mt-4">Malonate — a competitive inhibitor</h4>
-          <p>
-            Malonate (<sup>−</sup>OOC–CH<sub>2</sub>–COO<sup>−</sup>) is a 3-carbon dicarboxylate that resembles
-            succinate (<sup>−</sup>OOC–CH<sub>2</sub>–CH<sub>2</sub>–COO<sup>−</sup>) but cannot be oxidized. It is a
-            <b> competitive inhibitor of succinate dehydrogenase</b>. When cells are treated with malonate,
-            <b> succinate accumulates</b>.
-          </p>
-          <Callout kind="warn" title="Key distinction">
-            Note: <b>malate</b> (the CAC intermediate) is NOT an inhibitor — do not confuse malate with malonate. The
-            this is a commonly confused pair in metabolism. Similarly, &quot;tungstate is a competitive inhibitor of fumarase&quot; ⇒
-            fumarate builds up (not water, not malate).
-          </Callout>
 
           <h4 className="font-semibold mt-4">&quot;Negative allostery ≠ No positive allostery&quot;</h4>
           <p>
@@ -688,14 +641,13 @@ export default {
       { name: 'PDH net reaction', desc: 'Pyruvate + CoA-SH + NAD+ → Acetyl-CoA + CO2 + NADH. Irreversible (ΔG′° ≈ −33.4 kJ/mol). First carbon of glucose fully oxidized.' },
       { name: 'CAC net reaction (per turn)', desc: 'Acetyl-CoA + 3 NAD+ + FAD + GDP + Pi + 2 H2O → 2 CO2 + 3 NADH + FADH2 + GTP + CoA + 3 H+.' },
       { name: '4 redox steps in CAC', desc: 'IDH (NAD+), α-KG DH (NAD+), succinate DH (FAD), MDH (NAD+). All indirectly O2-dependent because oxidized cofactor must be regenerated by the ETC.' },
-      { name: 'Symmetric intermediates rule', desc: 'Succinate and fumarate are symmetric, so 14C tracers get scrambled between ends. After one CAC turn from uniformly-labeled OAA + unlabeled acetyl-CoA, OAA retains 1/2 the label.' },
+      { name: 'Symmetric intermediates rule', desc: 'Succinate and fumarate are symmetric molecules. At this point in the cycle the two ends of the molecule become chemically indistinguishable — a structural feature of the CAC noted in Lehninger Fig. 16-7.' },
       { name: 'Three-signal energy-charge rule', desc: 'PDH and CAC are inhibited by high [ATP]/[ADP], high [NADH]/[NAD+], and high [acetyl-CoA]/[CoA-SH]. All three ratios reflect energy sufficiency.' },
       { name: 'Malate DH thermodynamic coupling', desc: 'ΔG′° for malate → OAA is very positive (~+29 kJ/mol), but low [OAA] maintained by citrate synthase pulls the reaction forward (Le Chatelier).' }
     ],
     methods: [
       { name: 'Trace the PDH cofactor cycle', expand: 'T→L→C→F→N', desc: 'TPP (decarboxylation) → Lipoyllysine (swinging arm) → CoA-SH (acetyl pickup) → FAD (re-oxidize lipoyl) → NAD+ (final electron sink).' },
       { name: 'Identify redox steps in CAC', expand: '3-4-6-8', desc: 'Steps 3, 4, 6, 8 are the four redox reactions. Steps 3, 4, 8 use NAD+; step 6 uses FAD.' },
-      { name: '14C labeling in CAC', expand: 'Symmetry scramble', desc: 'When tracing 14C, remember that at succinate/fumarate the label is scrambled between the two ends because the molecule is symmetric. Answer &quot;1/2 retained in OAA after one turn&quot; for this analysis.' },
       { name: 'Spot the regulated step', expand: 'ΔG′° ≈ 0 check', desc: 'Regulated/irreversible steps have large negative in vivo ΔG. In the CAC: citrate synthase (1), IDH (3), α-KG DH (4). Reversible steps near equilibrium are NOT major control points.' },
       { name: 'Tell prosthetic from substrate', expand: 'Stays vs. leaves', desc: 'If it stays bound after catalysis → prosthetic group (TPP, lipoyllysine, FAD). If it diffuses away → co-substrate (NAD+, CoA-SH). If it is chemically transformed to a product → substrate (pyruvate, acetyl-CoA).' }
     ],
@@ -746,38 +698,6 @@ export default {
       correct: 1,
       difficulty: 'E',
       explanation: 'IDH oxidizes the secondary alcohol of isocitrate to a ketone and simultaneously decarboxylates, reducing NAD+ to NADH. Aconitase is a dehydration/rehydration (isomerization), succinyl-CoA synthetase is a substrate-level phosphorylation, and fumarase is a hydration — none of these are redox.',
-      chapter: 'PDH & CAC'
-    },
-    {
-      q: 'Oxaloacetate uniformly labeled with 14C is condensed with unlabeled acetyl-CoA. After a single pass through the citric acid cycle, what fraction of the original radioactivity is retained in oxaloacetate?',
-      type: 'mcq',
-      choices: ['0', '1/4', '1/2', '3/4', 'all of it'],
-      correct: 2,
-      difficulty: 'H',
-      explanation: 'Two 14C are released as CO2 at IDH and α-KG DH (both from original OAA). The remaining two 14C end up in succinate, which is symmetric — label is scrambled between the two ends. After fumarase and MDH, OAA on average retains 2 of the original 4 hot carbons → 1/2 of the original radioactivity.',
-      chapter: 'PDH & CAC'
-    },
-    {
-      q: 'Malonate is a competitive inhibitor of succinate dehydrogenase. If cells are treated with malonate, which metabolite accumulates?',
-      type: 'mcq',
-      choices: ['fumarate', 'malate', 'succinate', 'oxaloacetate'],
-      correct: 2,
-      difficulty: 'M',
-      explanation: 'Malonate (HOOC–CH2–COOH) is a structural analog of succinate that binds succinate dehydrogenase without being oxidized. Blocking step 6 causes the upstream substrate, succinate, to build up. Note: malonate ≠ malate.',
-      chapter: 'PDH & CAC'
-    },
-    {
-      q: 'Which of the following statements about citrate synthase is NOT true?',
-      type: 'mcq',
-      choices: [
-        'It catalyzes the only C–C bond-forming step of the CAC.',
-        'Oxaloacetate binds first and induces a conformational change that creates the acetyl-CoA binding site.',
-        'An aspartate residue functions as a general base, analogous to Asp102 in chymotrypsin.',
-        'Induced fit ensures that citrate synthase is most active when oxaloacetate concentration is LOW.'
-      ],
-      correct: 3,
-      difficulty: 'H',
-      explanation: 'Induced fit means the enzyme only becomes fully active when OAA binds first — so it is most active when OAA concentration is HIGH (enough to bind). The statement in choice 4 has the logic inverted.',
       chapter: 'PDH & CAC'
     },
     {
@@ -855,20 +775,6 @@ export default {
       chapter: 'PDH & CAC'
     },
     {
-      q: 'A chronic alcoholic presents with lactic acidosis, neurological symptoms, and elevated serum pyruvate. Which vitamin deficiency best explains these findings?',
-      type: 'mcq',
-      choices: [
-        'Niacin (B3) — affects NAD+ synthesis',
-        'Pantothenate (B5) — affects CoA synthesis',
-        'Thiamine (B1) — affects TPP-dependent enzymes including PDH and α-KG DH',
-        'Biotin — affects pyruvate carboxylase'
-      ],
-      correct: 2,
-      difficulty: 'H',
-      explanation: 'Thiamine deficiency (Wernicke-Korsakoff) is common in alcoholics because of poor absorption and poor diet. Without TPP, PDH and α-KG DH can\'t function. Pyruvate accumulates and is shunted to lactate, producing lactic acidosis. White-rice-only diets cause the same problem (beriberi).',
-      chapter: 'PDH & CAC'
-    },
-    {
       q: 'Succinate dehydrogenase uses FAD rather than NAD+ because:',
       type: 'mcq',
       choices: [
@@ -896,14 +802,6 @@ export default {
       correct: ['thiol', 'sulfhydryl', '-SH', 'SH', 'sulfur'],
       difficulty: 'E',
       explanation: 'CoA-SH uses its terminal thiol (–SH, from the β-mercaptoethylamine portion) to form a thioester with the acetyl group. Thioesters store the energy released during the PDH oxidation.',
-      chapter: 'PDH & CAC'
-    },
-    {
-      q: 'After a single turn of the CAC starting with fully labeled acetyl-CoA and unlabeled OAA, which CAC intermediate first ends up with the acetyl-derived carbons fully retained (not yet lost as CO2)?',
-      type: 'short',
-      correct: ['oxaloacetate', 'OAA', 'malate', 'succinate'],
-      difficulty: 'H',
-      explanation: 'The two CO2 released in the first turn come from carbons originally in OAA, not from the entering acetyl carbons. The acetyl-derived carbons end up distributed (via the symmetric succinate intermediate) in succinate/fumarate/malate and ultimately in the OAA produced at the end of the cycle.',
       chapter: 'PDH & CAC'
     },
     {

@@ -388,8 +388,7 @@ const chapter = {
       'P/O ratio determination using isolated mitochondria + oxygen electrode',
       'Selective inhibition (rotenone, antimycin, CN-, oligomycin, DNP) to localize a block',
       'Submitochondrial particles — vesicles with inverted topology used to demonstrate directional H+ pumping',
-      'X-ray crystallography / cryo-EM of F1 with bound ADP/ATP mapped the binding-change model',
-      'Boyer isotope-exchange experiments that exposed β-site cooperativity'
+      'X-ray crystallography / cryo-EM of F1 with bound ADP/ATP mapped the binding-change model'
     ],
     diagrams: [
       'Lehninger 19-19: full chemiosmotic model with Δp driving F0F1',
